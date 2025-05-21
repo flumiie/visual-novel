@@ -4,7 +4,6 @@
 ## them. Lines beginning with a single '#' mark are commented-out code, and you
 ## may want to uncomment them when appropriate.
 
-
 ## Basics ######################################################################
 
 ## A human-readable name of the game. This is used to set the default window
@@ -14,17 +13,14 @@
 
 define config.name = _("Visual Novel")
 
-
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
-
+define gui.show_name = False
 
 ## The version of the game.
 
 define config.version = "1.0"
-
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
@@ -32,13 +28,11 @@ define config.version = "1.0"
 define gui.about = _p("""
 """)
 
-
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
 define build.name = "VisualNovel"
-
 
 ## Sounds and music ############################################################
 
@@ -50,20 +44,17 @@ define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
-
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
 
 # define config.sample_sound = "sample-sound.ogg"
 # define config.sample_voice = "sample-voice.ogg"
 
-
 ## Uncomment the following line to set an audio file that will be played while
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
 # define config.main_menu_music = "main-menu-theme.ogg"
-
 
 ## Transitions #################################################################
 ##
@@ -76,25 +67,20 @@ define config.has_voice = True
 define config.enter_transition = dissolve
 define config.exit_transition = dissolve
 
-
 ## Between screens of the game menu.
 
 define config.intra_transition = dissolve
-
 
 ## A transition that is used after a game has been loaded.
 
 define config.after_load_transition = None
 
-
 ## Used when entering the main menu after the game has ended.
 
 define config.end_game_transition = None
 
-
 ## A variable to set the transition used when the game starts does not exist.
 ## Instead, use a with statement after showing the initial scene.
-
 
 ## Window management ###########################################################
 ##
@@ -108,12 +94,10 @@ define config.end_game_transition = None
 
 define config.window = "auto"
 
-
 ## Transitions used to show and hide the dialogue window
 
 define config.window_show_transition = Dissolve(.2)
 define config.window_hide_transition = Dissolve(.2)
-
 
 ## Preference defaults #########################################################
 
@@ -122,12 +106,10 @@ define config.window_hide_transition = Dissolve(.2)
 
 default preferences.text_cps = 0
 
-
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
 ## to 30 being the valid range.
 
 default preferences.afm_time = 15
-
 
 ## Save directory ##############################################################
 ##
@@ -145,13 +127,11 @@ default preferences.afm_time = 15
 
 define config.save_directory = "VisualNovel-1747808145"
 
-
 ## Icon ########################################################################
 ##
 ## The icon displayed on the taskbar or dock.
 
 define config.window_icon = "gui/window_icon.png"
-
 
 ## Build configuration #########################################################
 ##
@@ -195,13 +175,11 @@ init python:
     build.documentation('*.html')
     build.documentation('*.txt')
 
-
 ## A Google Play license key is required to perform in-app purchases. It can be
 ## found in the Google Play developer console, under "Monetize" > "Monetization
 ## Setup" > "Licensing".
 
 # define build.google_play_key = "..."
-
 
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.

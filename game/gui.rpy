@@ -14,45 +14,42 @@ init python:
 ## Enable checks for invalid or unstable properties in screens or transforms
 define config.check_conflicting_properties = True
 
-
 ################################################################################
 ## GUI Configuration Variables
 ################################################################################
-
 
 ## Colors ######################################################################
 ##
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#0099cc'
+define gui.accent_color = '#cc7a54'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#574748'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
 define gui.idle_small_color = '#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#66c1e0'
+define gui.hover_color = '#cc7a54'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = '#ffffff'
+define gui.selected_color = '#FF0000'
 
 ## The color used for a text button when it cannot be selected.
 define gui.insensitive_color = '#8888887f'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
-define gui.muted_color = '#003d51'
-define gui.hover_muted_color = '#005b7a'
+define gui.muted_color = '#995b3f'
+define gui.hover_muted_color = '#b56c4a'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#ffffff'
 define gui.interface_text_color = '#ffffff'
-
 
 ## Fonts and Font Sizes ########################################################
 
@@ -63,7 +60,7 @@ define gui.text_font = "DejaVuSans.ttf"
 define gui.name_text_font = "DejaVuSans.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "fonts/BryndanWriteBook-nGPM.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 33
@@ -72,7 +69,7 @@ define gui.text_size = 33
 define gui.name_text_size = 45
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 33
+define gui.interface_text_size = 45
 
 ## The size of labels in the game's user interface.
 define gui.label_text_size = 36
@@ -83,13 +80,11 @@ define gui.notify_text_size = 24
 ## The size of the game's title.
 define gui.title_text_size = 75
 
-
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
 define gui.main_menu_background = "gui/main_menu.png"
 define gui.game_menu_background = "gui/game_menu.png"
-
 
 ## Dialogue ####################################################################
 ##
@@ -102,7 +97,6 @@ define gui.textbox_height = 278
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
 define gui.textbox_yalign = 1.0
-
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
@@ -126,7 +120,6 @@ define gui.namebox_borders = Borders(5, 5, 5, 5)
 ## background of the namebox will be scaled.
 define gui.namebox_tile = False
 
-
 ## The placement of dialogue relative to the textbox. These can be a whole
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
@@ -139,7 +132,6 @@ define gui.dialogue_width = 1116
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
 define gui.dialogue_text_xalign = 0.0
-
 
 ## Buttons #####################################################################
 ##
@@ -173,7 +165,6 @@ define gui.button_text_insensitive_color = gui.insensitive_color
 ## is right).
 define gui.button_text_xalign = 0.0
 
-
 ## These variables override settings for different kinds of buttons. Please see
 ## the gui documentation for the kinds of buttons available, and what each is
 ## used for.
@@ -199,7 +190,6 @@ define gui.quick_button_text_selected_color = gui.accent_color
 
 # define gui.navigation_button_width = 250
 
-
 ## Choice Buttons ##############################################################
 ##
 ## Choice buttons are used in the in-game menus.
@@ -214,7 +204,6 @@ define gui.choice_button_text_xalign = 0.5
 define gui.choice_button_text_idle_color = '#888888'
 define gui.choice_button_text_hover_color = "#ffffff"
 define gui.choice_button_text_insensitive_color = '#8888887f'
-
 
 ## File Slot Buttons ###########################################################
 ##
@@ -240,7 +229,6 @@ define config.thumbnail_height = 216
 define gui.file_slot_cols = 3
 define gui.file_slot_rows = 2
 
-
 ## Positioning and Spacing #####################################################
 ##
 ## These variables control the positioning and spacing of various user interface
@@ -260,7 +248,7 @@ define gui.notify_ypos = 68
 define gui.choice_spacing = 33
 
 ## Buttons in the navigation section of the main and game menus.
-define gui.navigation_spacing = 6
+define gui.navigation_spacing = 14
 
 ## Controls the amount of spacing between preferences.
 define gui.pref_spacing = 15
@@ -276,7 +264,6 @@ define gui.slot_spacing = 15
 
 ## The position of the main menu text.
 define gui.main_menu_text_xalign = 1.0
-
 
 ## Frames ######################################################################
 ##
@@ -297,7 +284,6 @@ define gui.notify_frame_borders = Borders(24, 8, 60, 8)
 
 ## Should frame backgrounds be tiled?
 define gui.frame_tile = False
-
 
 ## Bars, Scrollbars, and Sliders ###############################################
 ##
@@ -331,7 +317,6 @@ define gui.vslider_borders = Borders(6, 6, 6, 6)
 ## while None shows them.
 define gui.unscrollable = "hide"
 
-
 ## History #####################################################################
 ##
 ## The history screen displays dialogue that the player has already dismissed.
@@ -358,7 +343,6 @@ define gui.history_text_xpos = 255
 define gui.history_text_ypos = 3
 define gui.history_text_width = 1110
 define gui.history_text_xalign = 0.0
-
 
 ## NVL-Mode ####################################################################
 ##
@@ -403,7 +387,6 @@ define gui.nvl_thought_xalign = 0.0
 define gui.nvl_button_xpos = 675
 define gui.nvl_button_xalign = 0.0
 
-
 ## Localization ################################################################
 
 ## This controls where a line break is permitted. The default is suitable
@@ -411,7 +394,6 @@ define gui.nvl_button_xalign = 0.0
 ## www.renpy.org/doc/html/style_properties.html#style-property-language
 
 define gui.language = "unicode"
-
 
 ################################################################################
 ## Mobile devices
